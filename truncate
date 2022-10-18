@@ -1,10 +1,16 @@
-# To clear the contents from <file>:
+# Personal
+## Borrar logs del apache:
+sudo truncate -s 0 /var/log/apache2/error.log
+
+
+# Community
+## To clear the contents from <file>:
 truncate -s 0 <file>
 
-# To truncate <file> to 100 bytes:
+## To truncate <file> to 100 bytes:
 truncate -s 100 <file>
 
-# To truncate <file> to 100 KB:
+## To truncate <file> to 100 KB:
 truncate -s 100K <file>
 
-# (M, G, T, P, E, Z, and Y may be used in place of "K" as required.)
+## (M, G, T, P, E, Z, and Y may be used in place of "K" as required.)
