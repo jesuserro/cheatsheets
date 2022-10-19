@@ -1,6 +1,73 @@
 ---
 tags: [ vcs ]
 ---
+# Personal
+## Remove directory from Git but NOT local
+git rm -r --cached FolderName
+
+## Merge sencillo, mergear mis cambios en dev a master:
+git checkout master
+git fetch --all --prune
+git pull
+git merge --no-ff dev
+### Así te aseguras de que no hay conflictos (al menos en el momento de subir los cambios)
+git push -u origin HEAD
+
+## Resolución de conflictos de Rafa (resolver siempre en nuestro equipo local)
+git checkout la_rama_que_tiene_conflicto
+git fetch
+git merge --no-ff origin/dev
+### Hace el merge y te dice el fichero (o ficheros) con conflictos (también puedes verlos con `git status`). Estos ficheros aparecen en color rojo en el phpStorm. Editas esos ficheros y los añades (git add).
+### Luego haces un commit y un push y ya no debería dar problemas
+
+### También te aconsejo que antes de hacer push de una rama, hagas en la rama a subir:
+git fetch
+git merge --no-ff origin/dev
+### Así te aseguras de que no hay conflictos (al menos en el momento de subir los cambios)
+git push -u origin HEAD
+
+## Crear rama feature/titulo
+### Directamente desde la shell
+``` shell
+# En 1 paso:
+git fetch --all --prune && git checkout -b feature/NGES-5191_titulo
+
+# Otros ejemplos:
+git checkout -b
+	feature/NGES-4721_titulo
+	release/v0.1.0
+	hotfix/rama-arreglamos-algo
+```
+
+### Desde JIRA crear rama llamada: "feature/titulo"
+Primero la creamos desde JIRA, después:
+``` shell
+# Mantiene coherencia ramas locales con las remotas (Alias: gfa) 
+git fetch --all --prune 
+
+git pull
+
+# Título de la rama creada por JIRA, sin espacios en blanco (sin "-b" porque ya está creada remotamente en JIRA)
+git checkout feature/titulo
+```
+
+### Nomenclaturas release
+https://semver.org/
+
+### Otros trucos
+``` shell
+git pull origin master #es lo mismo que estos 2 comandos:
+	git fetch --all --prune
+	git merge origin master
+
+# NO TIENE SENTIDO hacer:
+git checkout origin master 
+```
+
+
+
+
+# Community
 # To set your identity:
 git config --global user.name <name>
 git config --global user.email <email>
