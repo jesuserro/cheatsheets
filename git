@@ -4,6 +4,11 @@ tags: [ vcs ]
 # Personal
 ## Remove directory from Git but NOT local
 git rm -r --cached FolderName
+git commit -m "Removed folder FolderName from repository"
+git push origin master
+
+### .gitignore file will look like this
+/FolderName
 
 ## Merge sencillo, mergear mis cambios en dev a master:
 git checkout master
