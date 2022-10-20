@@ -2,6 +2,30 @@
 tags: [ vcs ]
 ---
 # Personal
+
+## Mostrar info del origen y cambiar origin a otro repo (de jesuserro a libricos)
+### ENCODE your Github personal access token
+``` shell
+# En dos líneas
+ENCODED_STRING="$(php -r 'echo rawurlencode("YOUR_ACCESS_TOKEN");')" && echo "$ENCODED_STRING" 
+
+git remote set-url origin https://jesuserro:$ENCODED_STRING@github.com/jesuserro/cheatsheets.git
+
+# En una única línea
+ENCODED_STRING="$(php -r 'echo rawurlencode("YOUR_ACCESS_TOKEN");')" && echo "$ENCODED_STRING" && git remote set-url origin https://jesuserro:$ENCODED_STRING@github.com/jesuserro/cheatsheets.git
+```
+
+### Set your remote url repo
+``` shell
+git remote show origin
+
+# git remote set-url origin https://github.com/libricosdev/libricos.git (pregunta siempre password y da problemas si el pass tiene caracteres especiales)
+# Haced mejor:
+git remote set-url origin https://username:url_encode_password@github.com/libricosdev/libricos.git
+
+git remote -v
+```
+
 ## Remove directory from Git but NOT local
 git rm -r --cached FolderName
 git commit -m "Removed folder FolderName from repository"
