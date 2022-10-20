@@ -1,5 +1,3 @@
 # Personal
-## Encode string 
-ENCODED_STRING="$(php -r 'echo rawurlencode("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");' -- "patata?")" \ 
-&& echo "$ENCODED_STRING" \ 
-&& git remote set-url origin https://jesuserro:$ENCODED_STRING@github.com/jesuserro/cheatsheets.git
+## Encode string, url params or token with php:
+ENCODED_STRING="$(php -r 'echo rawurlencode("YOUR_ACCESS_TOKEN");')" && echo "$ENCODED_STRING"
