@@ -3,6 +3,9 @@ tags: [ vcs ]
 ---
 # Personal
 
+## Revertir cambios locales en un fichero para quedarnos con la última versión comiteada (prod localidades con Néstor)
+git checkout <file>
+
 ## Set your remote url repo. See [[urlencode]]
 git remote show origin
 git remote set-url origin https://username:url_encode_password@github.com/jesuserro/cheatsheets.git

@@ -1,14 +1,19 @@
-# To see example usage of a program:
+# Personal
+## Buscar el término "sencillo" en cheat por Néstor. -A10 significa muestrame after 10 líneas después del match.
+cheat git | grep -A10 sencillo
+
+# Community
+## To see example usage of a program:
 cheat <command>
 
-# To edit a cheatsheet
+## To edit a cheatsheet
 cheat -e <command>
 
-# To list available cheatsheets
+## To list available cheatsheets
 cheat -l
 
-# To search available cheatsheets
+## To search available cheatsheets
 cheat -s <command>
 
-# To get the current `cheat' version
+## To get the current `cheat' version
 cheat -v
