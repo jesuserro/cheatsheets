@@ -1,5 +1,5 @@
 # Esto es A
 Lorem ipsum dolod sit amet
 
-- [Ir a WIKI b](/wiki/b)
-- [Readme](README.md)
+- [Ir a WIKI b](/tree/master/wiki/b)
+- [Readme](tree/master/README.md)
