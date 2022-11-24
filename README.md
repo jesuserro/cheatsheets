@@ -1,13 +1,8 @@
 # My cheatsheets
 
-- [Ir a WIKI A](wiki/a)
-  - [Ir a WIKI A1](https://github.com/jesuserro/cheatsheets/blob/master/wiki/a.md)
-  - [Ir a WIKI A2](https://github.com/jesuserro/cheatsheets/wiki/a)
-  - [Ir a WIKI A3](https://github.com/jesuserro/cheatsheets/tree/master/wiki/a)
-  - [Ir a WIKI A4](https://github.com/jesuserro/cheatsheets/master/wiki/a)
+- [Ir a WIKI A](https://github.com/jesuserro/cheatsheets/blob/master/wiki/a.md)
 - [Ir a WIKI B](https://github.com/jesuserro/cheatsheets/blob/master/wiki/b.md)
-- [Ir a WIKI C](wiki/c)
-  - [Ir a WIKI C2](https://github.com/jesuserro/cheatsheets/wiki/c)
+- [Ir C creado en Github](https://github.com/jesuserro/cheatsheets/wiki/c)
 
 This repository contains community-sourced cheatsheets to be used with cheat and similar applications.
 
