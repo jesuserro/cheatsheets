@@ -1,6 +1,11 @@
 # My cheatsheets
 
 - [Ir a WIKI A](wiki/a)
+  - [Ir a WIKI A2](https://github.com/jesuserro/cheatsheets/wiki/a)
+  - [Ir a WIKI A3](https://github.com/jesuserro/cheatsheets/tree/master/wiki/a)
+  - [Ir a WIKI A4](https://github.com/jesuserro/cheatsheets/master/wiki/a)
+- [Ir a WIKI C](wiki/c)
+  - [Ir a WIKI C2](https://github.com/jesuserro/cheatsheets/wiki/c)
 
 This repository contains community-sourced cheatsheets to be used with cheat and similar applications.
 
