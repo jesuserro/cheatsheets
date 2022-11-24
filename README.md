@@ -1,6 +1,6 @@
 # My cheatsheets
 
-- [Ir a WIKI A](/tree/master/wiki/a)
+- [Ir a WIKI A](wiki/a)
 
 This repository contains community-sourced cheatsheets to be used with cheat and similar applications.
 
